@@ -31,6 +31,9 @@ Scheduled Jobs with Custom Clock Processes in Python with APScheduler
 https://devcenter.heroku.com/articles/clock-processes-python
 https://medium.com/@gbuszmicz/cron-jobs-in-node-js-with-heroku-5f3c808b4d57
 
+Preventing your dyno from idling and exiting:
+https://stackoverflow.com/questions/5480337/easy-way-to-prevent-heroku-idling
+
 
 **Dont forget**
 
