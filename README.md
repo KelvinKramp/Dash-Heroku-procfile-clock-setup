@@ -42,7 +42,5 @@ https://hackernoon.com/how-to-prevent-your-free-heroku-dyno-from-sleeping-dggxo3
   heroku config:set WEB_CONCURRENCY=1
 - scale workers:
   heroku ps:scale clock=1
-- start Heroku scheduler job (you have to provide your creditcard, but it is free). Place following command to run in the job:
-  python clock.py
-
-
+  
+ You can also accomplish it via the Heroku scheduler job (you have to provide your creditcard, but it is free). 
