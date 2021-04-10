@@ -25,6 +25,7 @@ https://www.youtube.com/watch?v=9N6a-VLBa2I&t=22s
 Creating a custom clock proces on Heroku:
 Scheduled Jobs with Custom Clock Processes in Python with APScheduler
 https://devcenter.heroku.com/articles/clock-processes-python
+https://medium.com/@gbuszmicz/cron-jobs-in-node-js-with-heroku-5f3c808b4d57
 
 
 **Dont forget**
