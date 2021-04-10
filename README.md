@@ -20,7 +20,9 @@ Creating a custom clock proces on Heroku:
 Scheduled Jobs with Custom Clock Processes in Python with APScheduler
 https://devcenter.heroku.com/articles/clock-processes-python
 
-Dont forget to set web_concurrency on 1. 
+Dont forget to set web_concurrency on 1 and scale workers. 
 heroku config:set WEB_CONCURRENCY=1
+heroku ps:scale clock=1
 
 Let me know if you have any questions: k.h.kramp@gmail.com
+
