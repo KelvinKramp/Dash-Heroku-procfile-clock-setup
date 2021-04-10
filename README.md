@@ -1,6 +1,7 @@
 
 
 **Content**
+
 Mini project for creating a Dash app with a background scheduler in which the time interval of the scheduler can be changed by the Dash input text field. 
 Graphical userinterface from Dash can be used to change the frequency of data updates on the Heroku server.  
 
@@ -10,6 +11,7 @@ The procfile has references to three files:
 - line3: "clock: something". This is the reference to the clock file that is supposed to run on the Heroku server continually.
 
 **Sources**
+
 Dash basic callback example:
 https://dash.plotly.com/basic-callbacks
 
@@ -26,6 +28,7 @@ https://devcenter.heroku.com/articles/clock-processes-python
 
 
 **Dont forget**
+
 - set web_concurrency on 1:
   heroku config:set WEB_CONCURRENCY=1
 - scale workers:
