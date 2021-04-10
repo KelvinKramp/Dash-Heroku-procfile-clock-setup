@@ -1,3 +1,6 @@
+
+
+**Content**
 Mini project for creating a Dash app with a background scheduler in which the time interval of the scheduler can be changed by the Dash input text field. 
 Graphical userinterface from Dash can be used to change the frequency of data updates on the Heroku server.  
 
@@ -6,10 +9,10 @@ The procfile has references to three files:
 - line2: "worker: something". Reference to the file with the fucntion that does something. 
 - line3: "clock: something". This is the reference to the clock file that is supposed to run on the Heroku server continually.
 
+**Sources**
 Dash basic callback example:
 https://dash.plotly.com/basic-callbacks
 
-I used the following sources:
 Apscheduler - Backgroundscheduler (the blockscheduler doesnt allow for job rescheduling at the change of a time_interval variable)
 https://apscheduler.readthedocs.io/en/stable/userguide.html
 
@@ -21,7 +24,8 @@ Creating a custom clock proces on Heroku:
 Scheduled Jobs with Custom Clock Processes in Python with APScheduler
 https://devcenter.heroku.com/articles/clock-processes-python
 
-Dont forget to:
+
+**Dont forget**
 - set web_concurrency on 1:
   heroku config:set WEB_CONCURRENCY=1
 - scale workers:
