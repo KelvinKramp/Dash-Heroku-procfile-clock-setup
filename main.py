@@ -19,6 +19,7 @@ init_var = 2
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
 
 app.layout = html.Div([
     html.H6("Change the value in the text box to see callbacks in action!"),
@@ -43,4 +44,4 @@ def update_output_div(input_value):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=False)
+    app.run_server(host='0.0.0.0', port=8080 ,debug=False)
