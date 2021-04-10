@@ -12,6 +12,10 @@ The procfile has references to three files:
 
 **Sources**
 
+Procfile:
+https://pythonhosted.org/deis/using_deis/process-types/#:~:text=A%20Procfile%20is%20a%20mechanism,of%20the%20Twitter%20streaming%20API.
+"A Procfile is a text file named Procfile placed in the root of your application that lists the process types in an application. Each process type is a declaration of a command that is executed when a container of that process type is started. All the language and frameworks using Heroku’s Buildpacks declare a web process type, which starts the application server."
+
 Dash basic callback example:
 https://dash.plotly.com/basic-callbacks
 
