@@ -1,4 +1,4 @@
-Project for creating a Dash app with a background scheduler in which the time interval of the scheduler can be changed by the Dash input text field. 
+Mini project for creating a Dash app with a background scheduler in which the time interval of the scheduler can be changed by the Dash input text field. 
 I used as a interaction mechanism in a graphical userinterfact in which I want to change the frequency of data updates on a Heroku server.  
 
 The procfile has references to two files: 
