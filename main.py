@@ -15,7 +15,7 @@ print("Timed job started")
 
 # DEFINE VARIABLES
 # starting input value
-init_var = 2
+init_var = 90
 time_interval_file_path = os.path.join("time_interval.json")
 
 # APP
@@ -47,4 +47,4 @@ def update_output_div(input_value):
 
 
 if __name__ == '__main__':
-    app.run_server(host='0.0.0.0', port=8080 ,debug=False)
+    app.run_server(host='0.0.0.0', port=8080 ,debug=True)

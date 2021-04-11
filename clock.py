@@ -1,6 +1,8 @@
 from apscheduler.schedulers.background import BackgroundScheduler
 import os
 import json
+from datetime import datetime as dt
+
 
 # THIS IS THE HIGH LEVEL FUNCTION FOR BACKGROUND JOB
 def job():
@@ -33,13 +35,13 @@ def job():
         # if changed than reschedule job en restart with new variable
         if time_int2 != time_int:
             print("time interval setting changed... rescheduling job")
-            new_time = '*/'+str(time_int2)
-            job = sched.reschedule_job('my_job_id', trigger='cron', second=new_time)
+            new_time = int(time_int2)
+            job = sched.reschedule_job('my_job_id', second=new_time)
             print("job rescheduled with time interval", time_int2)
             time_int = time_int2
         else:
             print("running job every", time_int, "seconds")
 
     # schedule job with time interval variable
-    sched.add_job(timed_job, 'interval', seconds=time_int, id='my_job_id')
+    sched.add_job(timed_job, 'interval', seconds=time_int, id='my_job_id', next_run_time=dt.now())
 
